@@ -2,17 +2,19 @@ package Values;
 
 import java.util.ArrayList;
 
-public class Course implements Structure{
+public class Course extends ImpleStructure{//TODO
     ArrayList<Parts> Parts;
-    String name;
-    double weight;
-    public Course(String name, double weight) {
-        this.name = name;
-        this.weight = weight;
-    }
 
+    public Course() {
+        super();
+    }
     @Override
     public String printInfo(){return null;}
 
-    public double finalGrade(){return 0;}
+    @Override
+    public double finalGrade(){
+        return 0;//TODO
+    }
+
+
 }

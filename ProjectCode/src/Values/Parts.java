@@ -2,19 +2,18 @@ package Values;
 
 
 
-public class Parts implements Structure {
+public class Parts extends ImpleStructure {//TODO
 
-    double weight;
-    double grade;
-    String name;
 
-    public Parts(String name, double weight, double grade) {
-        this.name = name;
-        this.weight = weight;
-        this.grade = grade;
+    public Parts() {
+        super();
     }
     @Override
-    public String printInfo(){return null;}
+    public String printInfo(){return null;//TODO
+    }
 
-    public double finalGrade(){return 0;}
+    @Override
+    public double finalGrade(){
+        return 0;//TODO
+    }
 }
