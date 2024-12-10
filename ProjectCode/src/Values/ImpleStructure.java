@@ -1,17 +1,38 @@
 package Values;
 
-public abstract class ImpleStructure implements Structure{
-    double weight;
-    double grade;
-    String name;
+public abstract class ImpleStructure implements Structure{//TODO
+    private double weight;
+    private double grade;
+    private String  name;
 
-    public ImpleStructure(String name, double weight, double grade) {
-        this.name = name;
+    public ImpleStructure() {}
+
+    public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public void setGrade(double grade) {
         this.grade = grade;
     }
 
-    public ImpleStructure(String name, double weight) {
-        this(name, weight, 0);
+    public void setName(String name) {
+        this.name = name;
     }
+
+    public String getName() {
+        return name;
+    }
+    public double getWeight() {
+        return weight;
+    }
+    public double getGrade() {
+        return grade;
+    }
+
+    @Override
+    public String toString() {
+        return  "\n name= " + name + "\n grade= " + grade ;
+    }
+
+
 }

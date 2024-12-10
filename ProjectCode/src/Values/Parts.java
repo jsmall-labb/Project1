@@ -9,8 +9,8 @@ public class Parts extends ImpleStructure {//TODO
         super();
     }
     @Override
-    public String printInfo(){return null;//TODO
-    }
+    public String toString(){return "\n " + super.toString();}
+
 
     @Override
     public double finalGrade(){
